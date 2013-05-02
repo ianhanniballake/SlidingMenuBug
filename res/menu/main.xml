@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_hide_left"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/hide_left_pane"/>
+
+</menu>

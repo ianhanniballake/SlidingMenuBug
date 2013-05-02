@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sliding="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/left_pane"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#00FF00"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/left_pane" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            style="@android:style/TextAppearance.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0F0000"
+            android:text="@string/right_fixed_content" />
+
+        <com.slidingmenu.lib.SlidingMenu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sliding:behindWidth="100dp"
+            sliding:mode="right"
+            sliding:touchModeAbove="fullscreen"
+            sliding:viewAbove="@layout/above"
+            sliding:viewBehind="@layout/behind" />
+    </FrameLayout>
+
+</LinearLayout>

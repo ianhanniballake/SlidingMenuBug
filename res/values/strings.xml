@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SlidingExample</string>
+    <string name="left_pane">Left Pane</string>
+    <string name="right_fixed_content">Right Fixed Content</string>
+    <string name="above">Above</string>
+    <string name="behind">Behind</string>
+    <string name="hide_left_pane">Hide Left Pane</string>
+    <string name="show_left_pane">Show Left Pane</string>
+
+</resources>
